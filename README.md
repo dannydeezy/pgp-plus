@@ -3,21 +3,23 @@ Verifying PGP signatures is a pain. This tool makes it a little easier.
 
 [pgp.plus](https://pgp.plus)
 ## Installation
-To install, open the Terminal application on your computer, then copy-paste the commands below and press Enter.
+Note: you should audit the scripts you're installing first if you can. If you are unable to audit the scripts, you're trusting this open-source repository.
 
-### Mac
-```
-brew install wget
-cd ~/Desktop
-wget https://raw.githubusercontent.com/dannydeezy/easy-pgp/master/signature-checker
-chmod a+x signature-checker
-```
+To install, open the Terminal application on your computer then copy-paste the commands below and press Enter. 
 
-### Linux:
+### Mac / Linux
 ```
 cd ~/Desktop
-wget https://raw.githubusercontent.com/dannydeezy/easy-pgp/master/signature-checker
-chmod a+x signature-checker
+sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install.sh)
+```
+
+### Windows
+First [ install Curl ](https://curl.haxx.se/windows/)
+Then open the Command Prompt and copy-paste the following commands and press Enter:
+```
+cd /d "%HOMEDRIVE%%HOMEPATH%"
+cd Desktop
+sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install.sh)
 ```
 
 ## Usage:
