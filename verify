@@ -1,8 +1,5 @@
 #!/bin/bash
 
-CHECK="\xE2\x9C\x94"
-X="\xE2\x9D\x8c"
-
 printf "\n\n"
 printf "#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #\n"
 printf "#  ~~~~~~                      ~~~~~~~ #\n"
@@ -11,45 +8,55 @@ printf "#  ~~~~~~                      ~~~~~~~ #\n"
 printf "#  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #\n"
 printf "\n\n\n\n"
 
-tput sgr0
-
-
 printf "~~~~~~~ Drag file to verify here ~~~~~~~\n\n"
-
 read -d ' ' file
-
 printf "\n\n\n\n\n"
 printf "~~~~~~~ Drag signature file here ~~~~~~~\n\n"
-
 read -d ' ' sig
-
 printf "\n\n"
 
+# Initialize Green Checkmark and Red X icons
+CHECK="\xE2\x9C\x94"
+X="\xE2\x9D\x8c"
+
+# Check signature of files
 check_sig() {
+  # Reset text color to default
   tput sgr0
+
+  # Check signature and save results
   gpg --verify $sig $file > /tmp/sigresults 2>&1
 
+  # Check exit code of previous operation ^^^
   STATUS=$?
-  if [ $STATUS -eq 0 ]; then
-    #cat /tmp/sigresults
+  if [ $STATUS -eq 0 ]; then # Valid
+    # cat /tmp/sigresults
     tput setaf 2
     printf "\n\n\e[32;1m          Signature is valid $CHECK \n\n\n\n"
-  elif [ $STATUS -eq 1 ]; then
+  elif [ $STATUS -eq 1 ]; then # Invalid
     #cat /tmp/sigresults
     tput setaf 1
     printf "\n\n\e[32;1m          Invalid signature $X \n\n\n\n"
-  elif [ $STATUS -eq 2 ]; then
+  elif [ $STATUS -eq 2 ]; then # Key must be downloaded or unkown error
+
+    # Get key that must be downloaded from the previous results
     key=$(cat /tmp/sigresults | grep RSA | rev | cut -d " " -f1 | rev)
+
+    # If key is empty, then its some error we don't know
     if [ -z "$key" ]; then
       tput setaf 1
       printf "Unknown error - make sure you're uploading the right files\n\n\n\n"
       tput sgr0
       exit 1
     fi
+
+    # Otherwise download the key and retry
     printf "Receiving key $key...\n\n"
     gpg --recv-key $key > /tmp/downloadresults
     check_sig
+
   fi
+  
 }
 
 check_sig
