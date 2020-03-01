@@ -37,7 +37,7 @@ check_sig() {
     #cat /tmp/sigresults
     tput setaf 1
     printf "\n\n\e[32;1m          Invalid signature $X \n\n\n\n"
-  elif [ $STATUS -eq 2 ]; then # Key must be downloaded or unkown error
+  elif [ $STATUS -eq 2 ]; then # Key must be downloaded or unknown error
 
     # Get key that must be downloaded from the previous results
     key=$(cat /tmp/sigresults | grep RSA | rev | cut -d " " -f1 | rev)
