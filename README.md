@@ -1,5 +1,5 @@
 # Simple PGP Signature Checker
-Verifying PGP signatures is a pain. This tool makes it a little easier. 
+This tool makes verifying PGP signatures a little bit easier.
 
 [pgp.plus](https://pgp.plus)
 ## Installation
