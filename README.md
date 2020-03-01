@@ -30,7 +30,7 @@ chmod a+x signature-checker
 ## Run website locally (work in progress):
 ```
 git clone https://github.com/dannydeezy/pgp-plus.git
-cd easy-pgp/website
+cd pgp-plus/website
 python -m SimpleHTTPServer
 ```
 Open `localhost:8000` in a web browser
