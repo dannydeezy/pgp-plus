@@ -11,6 +11,15 @@ cd ~/Desktop
 sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install.sh)
 ```
 
+### Windows
+First [ install Curl ](https://curl.haxx.se/windows/)
+Then open the Command Prompt and copy-paste the following commands and press Enter:
+```
+cd /d "%HOMEDRIVE%%HOMEPATH%"
+cd Desktop
+sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install.sh)
+```
+
 ## Usage:
 - Double-click on the `signature-checker` file
 - Drag the file you'd like to verify into the window
