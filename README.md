@@ -1,2 +1,5 @@
-# easy-pgp
-PGP tools made easy
+# PGP tools made easy
+
+```
+./verify
+```
