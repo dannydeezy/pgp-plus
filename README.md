@@ -1,7 +1,7 @@
 # Simple PGP Signature Checker
 Verifying PGP signatures is a pain. This tool makes it a little easier. 
 
-[https://pgp.plus](https://pgp.plus)
+[pgp.plus](pgp.plus)
 ## Installation
 To install, open the Terminal application on your computer, then copy-paste the commands below and press Enter.
 
@@ -25,7 +25,7 @@ chmod a+x signature-checker
 - Drag the file you'd like to verify into the window
 - Drag the signature file into the window
 
-[See example video](https://pgp.plus)
+[See example video](pgp.plus)
 
 ## Run website locally (work in progress):
 ```
