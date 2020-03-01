@@ -3,7 +3,7 @@ Verifying PGP signatures is a pain. This tool makes it a little easier.
 
 [pgp.plus](https://pgp.plus)
 ## Installation
-Note, you should audit the scripts you're installing first if you can. If you are unable to audit the scripts, you're trusting this open-source repository.
+Note: you should audit the scripts you're installing first if you can. If you are unable to audit the scripts, you're trusting this open-source repository.
 
 To install, open the Terminal application on your computer, then copy-paste the commands below and press Enter. 
 
