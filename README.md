@@ -1,4 +1,4 @@
-# Easy PGP Signature Checker
+# Simple PGP Signature Checker
 Verifying PGP signatures is a pain. This tool makes it a little easier.
 ## Installation
 To install, open the Terminal application on your computer, then copy-paste the commands below and press Enter.
