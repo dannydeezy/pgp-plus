@@ -1,17 +1,20 @@
 # Easy PGP Signature Checker
 Verifying PGP signatures is a pain. This tool makes it a little easier.
-## Installation (Mac):
+## Installation
+To install, open the Terminal application on your computer, then copy-paste the commands below and press Enter.
+
+### Mac
 ```
 brew install wget
 cd ~/Desktop
-wget https://raw.githubusercontent.com/dannybitgo/easy-pgp/master/signature-checker
+wget https://raw.githubusercontent.com/dannydeezy/easy-pgp/master/signature-checker
 chmod a+x signature-checker
 ```
 
-## Installation (Linux):
+### Linux:
 ```
 cd ~/Desktop
-wget https://raw.githubusercontent.com/dannybitgo/easy-pgp/master/signature-checker
+wget https://raw.githubusercontent.com/dannydeezy/easy-pgp/master/signature-checker
 chmod a+x signature-checker
 ```
 
@@ -22,7 +25,7 @@ chmod a+x signature-checker
 
 ## Run website locally (work in progress):
 ```
-git clone https://github.com/dannybitgo/easy-pgp.git
+git clone https://github.com/dannydeezy/pgp-plus.git
 cd easy-pgp/website
 python -m SimpleHTTPServer
 ```
