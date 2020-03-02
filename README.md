@@ -6,15 +6,8 @@ This tool makes verifying PGP signatures a little bit easier.
 Note: you should audit the scripts you're installing first if you can. If you are unable to audit the scripts, you're trusting this open-source repository.
 
 ### Mac
-- Open your Terminal application and copy-paste the following code into it, then press enter (this installs Homebrew):
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-- Press Enter again, and then install GPG with:
-```
-brew install gnupg
-```
-- Finally copy-paste these last two commands and press enter:
+- First [download and install GPG](https://sourceforge.net/projects/gpgosx/files/GnuPG-2.2.19.dmg/download). Make sure to open the `.dmg` and install the package fully.
+- Open your Terminal application and copy paste the following code, then press enter:
 ```
 cd ~/Desktop
 sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install.sh)
