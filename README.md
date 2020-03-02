@@ -21,16 +21,7 @@ cd ~/Dekstop && sudo apt install gnupg gnupg2 && sh <(curl https://raw.githubuse
 ```
 
 ### Windows
-- First [download install Curl](https://curl.haxx.se/windows/)
-- Then [download and install GPG](https://gpg4win.org/download.html)
-- Open the Command Prompt application and copy-paste the following code into it, then press enter:
-```
-sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/prepare-windows.sh)
-```
-- Once that finishes, do:
-```
-sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/install.sh)
-```
+- You should just [download and install GPG](https://gpg4win.org/download.html) and use Kleopatra, the built in UI. It's better than this :)
 
 ## Usage:
 - Double-click on the `signature-checker` file
