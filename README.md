@@ -6,19 +6,15 @@ This tool makes verifying PGP signatures a little bit easier.
 Note: you should audit the scripts you're installing first if you can. If you are unable to audit the scripts, you're trusting this open-source repository.
 
 ### Mac
-- First [download and install GPG](https://sourceforge.net/projects/gpgosx/files/GnuPG-2.2.19.dmg/download). Make sure to open the `.dmg` and install the package fully.
-- Open your Terminal application and copy paste the following code, then press enter:
+- Open your Terminal application and copy-paste the following code, then press enter (note it make take a while if you don't already have `brew` and `gpg` installed and you'll need to press enter a few times along the way):
 ```
-cd ~/Desktop
-sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install.sh)
+sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/install-mac.sh)
 ```
 
 ### Linux
-- Open your Terminal application and copy-paste the following code into it, then press enter:
+- Open your Terminal application and copy-paste the following code into it, then press enter (you'll need to enter your password to install gnupg and gnupg2):
 ```
-sudo apt install gnupg
-cd ~/Desktop
-sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install.sh)
+sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/install-linux.sh)
 ```
 
 ### Windows
@@ -26,9 +22,7 @@ sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install.s
 - Then [download and install GPG](https://gpg4win.org/download.html)
 - Open the Command Prompt application and copy-paste the following code into it, then press enter:
 ```
-cd /d "%HOMEDRIVE%%HOMEPATH%"
-cd Desktop
-sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install.sh)
+sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/install-mac.sh)
 ```
 
 ## Usage:
