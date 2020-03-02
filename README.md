@@ -5,7 +5,7 @@ This tool makes verifying PGP signatures a little bit easier.
 Note: you should audit the scripts you're installing first if you can. If you are unable to audit the scripts, you're trusting this open-source repository.
 
 ### Mac
-- Open your Terminal application and copy-paste the following code, then press enter (note it make take a while if you don't already have `brew` and `gpg` installed and you'll need to press enter a few times along the way):
+- Open your Terminal application and copy-paste the following code, then press enter (note it may take a while if you don't already have `brew` and `gpg` installed and you'll need to press enter a few times along the way):
 ```
 cd ~/Desktop && sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/prepare-mac.sh)
 ```
