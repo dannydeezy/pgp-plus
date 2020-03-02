@@ -5,8 +5,6 @@ This tool makes verifying PGP signatures a little bit easier.
 ## Installation
 Note: you should audit the scripts you're installing first if you can. If you are unable to audit the scripts, you're trusting this open-source repository.
 
-To install, open the Terminal application on your computer then copy-paste the commands below and press Enter. 
-
 ### Mac
 - First [download and install GPG](https://gpgtools.org/)
 - Open your Terminal application and copy-paste the following code into it, then press enter:
