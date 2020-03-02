@@ -39,11 +39,13 @@ sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/i
 
 [See example video](https://pgp.plus)
 
-## Run website locally (work in progress):
+## Website:
 [pgp.plus](https://pgp.plus)
+
+### Running locally
 ```
 git clone https://github.com/dannydeezy/pgp-plus.git
 cd pgp-plus/website
 python -m SimpleHTTPServer
 ```
-Open `localhost:8000` in a web browser
+- Open `localhost:8000` in a web browser
