@@ -18,6 +18,7 @@ sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install.s
 ### Linux
 - Open your Terminal application and copy-paste the following code into it, then press enter:
 ```
+sudo apt install gnupg
 cd ~/Desktop
 sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install.sh)
 ```
