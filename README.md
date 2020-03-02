@@ -1,7 +1,6 @@
 # Simple PGP Signature Checker
 This tool makes verifying PGP signatures a little bit easier.
 
-[pgp.plus](https://pgp.plus)
 ## Installation
 Note: you should audit the scripts you're installing first if you can. If you are unable to audit the scripts, you're trusting this open-source repository.
 
@@ -33,6 +32,7 @@ sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/i
 [See example video](https://pgp.plus)
 
 ## Run website locally (work in progress):
+[pgp.plus](https://pgp.plus)
 ```
 git clone https://github.com/dannydeezy/pgp-plus.git
 cd pgp-plus/website
