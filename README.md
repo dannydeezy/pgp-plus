@@ -7,13 +7,15 @@ Note: you should audit the scripts you're installing first if you can. If you ar
 ### Mac
 - Open your Terminal application and copy-paste the following code, then press enter (note it make take a while if you don't already have `brew` and `gpg` installed and you'll need to press enter a few times along the way):
 ```
-sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/install-mac.sh)
+sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/prepare-mac.sh)
+sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/install.sh)
 ```
 
 ### Linux
 - Open your Terminal application and copy-paste the following code into it, then press enter (you'll need to enter your password to install gnupg and gnupg2):
 ```
-sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/install-linux.sh)
+sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/prepare-linux.sh)
+sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/install.sh)
 ```
 
 ### Windows
@@ -21,7 +23,8 @@ sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/i
 - Then [download and install GPG](https://gpg4win.org/download.html)
 - Open the Command Prompt application and copy-paste the following code into it, then press enter:
 ```
-sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/install-mac.sh)
+sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/prepare-windows.sh)
+sh <(curl https://raw.githubusercontent.com/dannydeezy/pgp-plus/master/install/install.sh)
 ```
 
 ## Usage:
