@@ -45,7 +45,7 @@ check_sig() {
     # If key is empty, then its some error we don't know
     if [ -z "$key" ]; then
       tput setaf 1
-      printf "Unknown error - make sure you're uploading the right files\n\n\n\n"
+      printf "Unknown error - make sure there aren't any spaces in the filenames!\n\n\n\n"
       tput sgr0
       exit 1
     fi
