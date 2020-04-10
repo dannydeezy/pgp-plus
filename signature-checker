@@ -52,7 +52,7 @@ check_sig() {
 
     # Otherwise download the key and retry
     printf "Receiving key $key...\n\n"
-    gpg --recv-key $key > /tmp/downloadresults
+    gpg --keyserver hkps://keyserver.ubuntu.com --recv-key $key > /tmp/downloadresults
     check_sig
 
   fi
